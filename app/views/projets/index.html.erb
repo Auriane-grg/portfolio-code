@@ -1,0 +1,41 @@
+<div id="project-header" >
+  <h1>Mes projets <span>web</span></h1>
+</div>
+<div id="projects">
+  <% @projets.each do  |projet| %>
+    <div class="projet">
+      <% if (projet.id / projet.id) != 0 %>
+        <div class='projet-left-photo'>
+          <img src='https://previews.dropbox.com/p/thumb/ABHkXDcyBtkbv1DKXHNjcmszjRMoMmUSZUVdr8SZNgssL-oXQ5mvy8igAB5MJoo7D8WLnVt64fuWz3cWqb9FjVqG44r2o9A41xFyPtmLLy1SYonhlaXuENF_uSjWo4SwFFBgi7rZz467Xmwc4O-gH_WhfnCdj0_xf5YqpMeqBrjjWvK7YzOufqFLNyRYBFTFNrsWlxjEfMZ36A9njCsf6JJKcCgZgvU_jA159ev06hQSNf9AEoAikyw_uyH7SlkxQmuho-1Cxg5vcpsyZsbqG_W9ZwwDmUEDScp9ku5cEPI6kOYy4p1RIwHFci5-B2O6nOaHk26VbgOWIDdLOwFAKgp8HymH2csdWSiqJUlijH5voYUuU_zYRZwr5xDfcFKNs_M/p.jpeg?fv_content=true&size_mode=5'>
+        </div>
+        <div class="projet-right-info">
+          <h2><%= projet.name %></h2>
+          <p class='date'><%= projet.date %></p>
+          <p class="description"><%= projet.description %></p>
+          <p class='hebergement'><b>App hébergée sur : </b><%= projet.host %></p>
+          <p><b>Database :</b> postgresql</p>
+          <p><b>Stack : </b></p>
+          <ul class='stack'>
+            <% projet.stack.each do |s| %>
+              <li><%= s %> </li>
+            <% end %>
+          </ul>
+          <a href="<%= projet.url %>" target='blank' class='btn'>VISITER L'APP</a>
+        </div>
+      <% else %>
+        <div class="projet-left-info">
+          <h2><%= projet.name %></h2>
+          <p class='date'><%= projet.date %></p>
+          <p class="description"><%= projet.description %></p>
+          <p class='hebergement'><b>App hébergée sur : </b><%= projet.host %></p>
+          <p><b>Database :</b> postgresql</p>
+          <p class='stack'><b>Stack : </b><%= projet.stack %></p>
+          <a href="<%= projet.url %>" target='blank' class='btn'>VISITER L'APP</a>
+        </div>
+        <div class='projet-right-photo'>
+          <img src='https://previews.dropbox.com/p/thumb/ABHkXDcyBtkbv1DKXHNjcmszjRMoMmUSZUVdr8SZNgssL-oXQ5mvy8igAB5MJoo7D8WLnVt64fuWz3cWqb9FjVqG44r2o9A41xFyPtmLLy1SYonhlaXuENF_uSjWo4SwFFBgi7rZz467Xmwc4O-gH_WhfnCdj0_xf5YqpMeqBrjjWvK7YzOufqFLNyRYBFTFNrsWlxjEfMZ36A9njCsf6JJKcCgZgvU_jA159ev06hQSNf9AEoAikyw_uyH7SlkxQmuho-1Cxg5vcpsyZsbqG_W9ZwwDmUEDScp9ku5cEPI6kOYy4p1RIwHFci5-B2O6nOaHk26VbgOWIDdLOwFAKgp8HymH2csdWSiqJUlijH5voYUuU_zYRZwr5xDfcFKNs_M/p.jpeg?fv_content=true&size_mode=5'>
+        </div>
+      <% end %>
+    </div>
+    <% end %>
+</div>
