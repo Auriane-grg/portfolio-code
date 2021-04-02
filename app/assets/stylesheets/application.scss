@@ -1,13 +1,35 @@
 // Graphical variables
 @import "config/fonts";
 @import "config/colors";
-@import "config/bootstrap_variables";
+// @import "config/bootstrap_variables";
 
 // External libraries
-@import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Merriweather', serif;
+  font-weight: normal;
+ }
+
+ p{
+  font-family: 'Open Sans', sans-serif;
+ }
+
+
+h1{
+  font-size: 30px;
+}
+
+h2{
+  font-size: 25px;
+}
+
+ body{
+   margin:0;
+ }
