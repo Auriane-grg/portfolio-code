@@ -13,6 +13,17 @@
       width: 60%;
     }
   }
+  #skills{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr)  minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr)  minmax(0, 1fr) minmax(0, 1fr);
+    grid-gap: 50px;
+    padding: 30px 100px;
+    background-color: #dad9bd;
+
+    img{
+      width:100%
+    }
+  }
 }
 
 
@@ -29,6 +40,17 @@
     }
     .photo-right{
       width: 50%;
+    }
+  }
+  #skills{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr)   minmax(0, 1fr)  minmax(0, 1fr) minmax(0, 1fr)  minmax(0, 1fr) minmax(0, 1fr);
+    grid-gap: 10px;
+    padding: 30px;
+    background-color: #dad9bd;
+
+    img{
+      width:100%
     }
   }
 }
@@ -70,71 +92,11 @@
     padding:50px;
     text-align: center;
   }
-  #skills{
-    display: block;
-    #lang-about{
-      display: flex;
-      text-align: center;
-      .white-space-large{
-        width: 30%;
-      }
-      .skills-dev{
-        width: 60%;
-        background-color: #B098A4;
-      }
-      .white-space-small{
-        width: 10%
-      }
-      img{
-        height: 100px;
-        object-fit: cover;
-        margin-right: 30px;
-      }
-    }
-    #soft-about{
-      display: flex;
-      text-align: center;
-      .white-space-large{
-        width: 30%;
-      }
-      .skills-dev{
-        width: 60%;
-        background-color: #dad9bd;
-      }
-      .white-space-small{
-        width: 10%
-      }
-      img{
-        height: 100px;
-        object-fit: cover;
-        margin-right: 30px;
-      }
-    }
-    #graph-about{
-      display: flex;
-      text-align: center;
-      .white-space-large{
-        width: 40%;
-      }
-      .skills-dev{
-        width: 40%;
-        background-color: #B098A4;;
-      }
-      .white-space-small{
-        width: 20%
-      }
-      img{
-        height: 100px;
-        object-fit: cover;
-        margin-right: 30px;
-      }
-    }
-  }
   .btn-inside{
     display: inline-flex;
     justify-content: center;
     width: 100%;
-    margin: 50px 0px;
+    margin-bottom: 80px;
   }
   .btn{
     text-align: center;
@@ -192,70 +154,21 @@
     text-align: center;
   }
   #skills{
-    display: block;
-    #lang-about{
-      display: flex;
-      text-align: center;
-      .white-space-large{
-        width: 20%;
-      }
-      .skills-dev{
-        width: 70%;
-        background-color: #B098A4;
-      }
-      .white-space-small{
-        width: 10%
-      }
-      img{
-        height: 50px;
-        object-fit: cover;
-        margin-right: 30px;
-      }
-    }
-    #soft-about{
-      display: flex;
-      text-align: center;
-      .white-space-large{
-        width: 20%;
-      }
-      .skills-dev{
-        width: 70%;
-        background-color: #dad9bd;
-      }
-      .white-space-small{
-        width: 10%
-      }
-      img{
-        height: 50px;
-        object-fit: cover;
-        margin-right: 30px;
-      }
-    }
-    #graph-about{
-      display: flex;
-      text-align: center;
-      .white-space-large{
-        width: 20%;
-      }
-      .skills-dev{
-        width: 70%;
-        background-color: #B098A4;;
-      }
-      .white-space-small{
-        width: 10%
-      }
-      img{
-        height: 50px;
-        object-fit: cover;
-        margin-right: 30px;
-      }
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr)  minmax(0, 1fr) minmax(0, 1fr);
+    grid-gap: 10px;
+    background-color: #dad9bd;
+    padding: 20px;
+
+    img{
+      width:100%
     }
   }
   .btn-inside{
     display: inline-flex;
     justify-content: center;
     width: 100%;
-    margin: 50px 0px;
+    margin-bottom: 40px;
   }
   .btn{
     text-align: center;
