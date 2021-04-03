@@ -18,3 +18,34 @@
     <%= cl_image_tag("auriane-green_eip0bs") %>
   </div>
 </div>
+<div class="projects">
+  <% @projets.each do  |projet| %>
+    <% if projet.id.even?%>
+      <div class="projet">
+        <div class='projet-left-photo'>
+          <%= cl_image_tag("adventureplanner_nlwrhd") %>
+        </div>
+        <div class="projet-right-info">
+          <h2><%= projet.name %></h2>
+          <p class="description"><%= projet.description %></p>
+          <%= link_to "EN SAVOIR PLUS", projets_path, class:'btn' %>
+        </div>
+      </div>
+    <% else %>
+      <div class="projet">
+        <div class='mob-photo'>
+          <%= cl_image_tag("cocktail-code_mxdcdg") %>
+        </div>
+        <div class="projet-left-info">
+          <h2><%= projet.name %></h2>
+          <p class='date'><%= projet.date %></p>
+          <p class="description"><%= projet.description %></p>
+          <%= link_to "EN SAVOIR PLUS", projets_path, class:'btn' %>
+        </div>
+        <div class='projet-right-photo'>
+          <%= cl_image_tag("cocktail-code_mxdcdg") %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>
