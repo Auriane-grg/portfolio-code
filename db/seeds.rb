@@ -7,13 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Projet.destroy_all 
 
-Projet.create(name:'Cocktail app', 
-date:'Mars 2020', 
-description:'Cocktail app vous permet de découvrir de nouveaux cocktails, et de partager les vôtres avec vos proches ! Ajoutez-y les recettes de vos cocktails préférés...', 
-url:'https://cocktail-code.herokuapp.com/cocktails', 
-github: 'https://github.com/Auriane-grg/cocktail-code', 
-host:'Heroku', 
-stack:['ruby on rails', 'javascript', 'css', 'html'])
+
 
 Projet.create(name:'Adventure planner', 
 date:'Mars 2020', 
@@ -21,4 +15,12 @@ description:'Retrouvez des itinéraires de randonnées pour une escapade en ski 
 url:'http://www.adventureplanner.org/', 
 github: 'https://github.com/Mareenbck/ADVENTUREPLANNERe', 
 host:'Deployed on Heroku', 
-stack:['ruby on rails', 'javascript', 'css', 'html', 'json'])
+stack:['ruby on rails', 'javascript', 'css', 'html'])
+
+Projet.create(name:'Cocktail app', 
+date:'Mars 2020', 
+description:'Cocktail app vous permet de découvrir de nouveaux cocktails, et de partager les vôtres avec vos proches ! Ajoutez-y les recettes de vos cocktails préférés...', 
+url:'https://cocktail-code.herokuapp.com/cocktails', 
+github: 'https://github.com/Auriane-grg/cocktail-code', 
+host:'Heroku', 
+stack:['ruby on rails', 'javascript', 'css', 'html'])
