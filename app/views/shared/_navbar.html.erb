@@ -1,8 +1,12 @@
 <div id="navbar">
-  <%= link_to "Home", root_path %>
-  <%= link_to "Projets", projets_path %>
-  <%= link_to "Auriane",  pages_about_path %>
-  <a href="https://github.com/Auriane-grg"><i class="fab fa-github-square"></i></a>
-  <a href="https://www.linkedin.com/in/augregoire/"><i class="fab fa-linkedin-in"></i></a>
-  <a href="auriane.gregoire@gmail.com"><i class="fas fa-paper-plane"></i></a>
+  <div id="my-links">
+    <a href="https://github.com/Auriane-grg"><i class="fab fa-github-square"></i></a>
+    <a href="https://www.linkedin.com/in/augregoire/"><i class="fab fa-linkedin-in"></i></a>
+    <a href="auriane.gregoire@gmail.com"><i class="fas fa-paper-plane"></i></a>
+    </div>
+  <div id="pages">
+    <%= link_to "Home", root_path %>
+    <%= link_to "Projets", projets_path %>
+    <%= link_to "Auriane",  pages_about_path %>
+  </div>
 </div>

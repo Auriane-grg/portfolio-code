@@ -15,10 +15,10 @@
   }
   #skills{
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr)  minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr)  minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr)  minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr)  minmax(0, 1fr) minmax(0, 1fr);
     grid-gap: 50px;
     padding: 30px 100px;
-    background-color: #dad9bd;
+    background-color: #e5EBEA;
 
     img{
       width:100%
