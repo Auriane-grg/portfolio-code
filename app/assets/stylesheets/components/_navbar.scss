@@ -1,14 +1,15 @@
 @media(min-width: 500px){
   #navbar{
+    background-color: #b098A4;
     position:fixed;
     top: 0;
+    z-index: 1;
+    height: 20px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: #45503B;
     padding: 12px;
     color: white;
-    width: 100%;
-    z-index: 1;
     a{
       color:white;
       text-transform: uppercase;
@@ -52,7 +53,6 @@
     #pages{
       display: flex;
       justify-content: space-evenly;
-      mar
     }
     #my-links{
       display: flex;

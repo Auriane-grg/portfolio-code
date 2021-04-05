@@ -1,0 +1,12 @@
+
+    <%= simple_form_for(@projet) do |f| %>
+        <%= f.input :name %>
+        <%= f.input :date %>
+        <%= f.input :description %>
+        <%= f.input :host %>
+        <%= f.input :url %>
+        <%= f.input :github %>
+        <%= f.input :stack, :collection => ["ruby on rails", "javascript", "css", "html"], :input_html => { multiple: true } %>
+        <%= f.input :photo, as: :file %>
+        <%= f.submit class:'btn' %>
+      <% end %>

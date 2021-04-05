@@ -9,7 +9,19 @@ class ProjetsController < ApplicationController
   end
 
   def create
-    @projet = Projet.new(params[:projet])
-    @projet.save
+    @projet = Projet.new(projet_params)
+    @projet.stack.shift
+    if @projet.save!
+      redirect_to projets_path(@projet)
+    else
+      raise
+      render :new
+    end
   end
+
+  private
+  def projet_params
+    params.require(:projet).permit(:name, :description, :date, :github, :host, :photo, :url, :stack => [])
+  end
+
 end

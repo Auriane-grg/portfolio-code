@@ -39,19 +39,21 @@
         width: fit-content;
         margin-bottom: 15px;
       }
-      .btn{
+      .btn:before {
         text-align: center;
-        background-color: #45503B;
+        background-color: #283D3B;
         padding: 12px;
         color: white;
         text-decoration: none;
         font-family: 'Open Sans', sans-serif;
         border-radius: 5px;
         font-weight: bold;
+        width: 100%;
       }
     }
   }
 }
+
 
 
 @media(max-width: 500px) {
@@ -82,7 +84,7 @@
       }
       a.btn{
         text-align: center;
-        background-color: #45503B;
+        background-color: #283D3B;
         padding: 12px;
         color: white;
         text-decoration: none;
