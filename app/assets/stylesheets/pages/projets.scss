@@ -16,6 +16,7 @@
 @media(min-width: 500px) {
   .projet{
     display: flex;
+    margin-bottom: 20px;
     .projet-left-photo, .projet-right-info, .projet-right-photo, .projet-left-info{
       width: 50%;
     }
@@ -48,6 +49,7 @@
 @media(max-width: 500px) {
   .projet{
     display: block;
+    margin-bottom: 20px;
     // .projet-left-photo, .projet-right-info, .projet-right-photo, .projet-left-info{
     //   width: 100%;
     // }
@@ -78,3 +80,10 @@
 .stack{
   margin-bottom: 50px;
 }
+
+.simple_form.new_projet{
+  margin-top: 100px;
+}
+
+// Planifiez votre excursion en ski de fond en toute sécurité ! Découvrez la carte 3D de votre itinéraire, ses points forts, les équipement nécessaires, la météo prévue pour le jour J, ainsi que des témoignages ! Et pour ne pas partir seul, échangez avec les randoneurs ayant prévu l'excurssion le même jour que vous sur le chat.
+// Découvrez des cocktails savoureux et reproduisez leur recette pour 1, 2... autant de personnes que souhaitées ! Ajoutez également vos recettes personnelles pour les partager au plus grand nombre.

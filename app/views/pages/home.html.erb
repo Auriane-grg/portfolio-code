@@ -22,17 +22,6 @@
   <% @projets.each do  |projet| %>
     <% if projet.id.even?%>
       <div class="projet">
-        <div class='projet-left-photo'>
-          <%= cl_image_tag("adventureplanner_uuapnp") %>
-        </div>
-        <div class="projet-right-info">
-          <h2><%= projet.name %></h2>
-          <p class="description"><%= projet.description %></p>
-          <%= link_to "EN SAVOIR PLUS", projets_path, class:'btn' %>
-        </div>
-      </div>
-    <% else %>
-      <div class="projet">
         <div class='mob-photo'>
           <%= cl_image_tag("cocktail-code_rlgkhy") %>
         </div>
@@ -43,7 +32,18 @@
           <%= link_to "EN SAVOIR PLUS", projets_path, class:'btn' %>
         </div>
         <div class='projet-right-photo'>
-          <%= cl_image_tag("cocktail-code_rlgkhy") %>
+          <%= cl_image_tag projet.photo.key %>
+        </div>
+      </div>
+    <% else %>
+      <div class="projet">
+        <div class='projet-left-photo'>
+          <%= cl_image_tag projet.photo.key %>
+        </div>
+        <div class="projet-right-info">
+          <h2><%= projet.name %></h2>
+          <p class="description"><%= projet.description %></p>
+          <%= link_to "EN SAVOIR PLUS", projets_path, class:'btn' %>
         </div>
       </div>
     <% end %>
