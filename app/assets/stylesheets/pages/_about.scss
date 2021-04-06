@@ -6,6 +6,10 @@
   height: fit-content;
   display: flex;
   width: 100%;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 2s;
+  animation-name: animatebottom;
+  animation-duration: 2s;
     .info-left{
       width: 40%;
       text-align: left;
@@ -65,6 +69,10 @@
 @media(max-width: 800px) {
 
   #about-header{
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 2s;
+    animation-name: animatebottom;
+    animation-duration: 2s;
     margin-top: 50px;
     display: block;
     width: auto;
