@@ -64,16 +64,24 @@
   }
 }
 
-.nav-scroll{
-  background-color: #b098A4;
-  a{
-    color:white;
-  }
-}
 
 
 .nav-top{
   background-color: none;
+  a{
+    color:black;
+    font-weight: bold;
+  }
+  #pages a:hover{
+    border-bottom: 1px solid black;
+  }
+  #my-links a:hover{
+    color:#b098A4;
+  }
+}
+
+.nav-scroll{
+  background-color: white;
   a{
     color:black;
     font-weight: bold;
