@@ -3,6 +3,9 @@
   <% @projets.each do  |projet| %>
     <% if projet.id.even? %>
       <div class="projet">
+          <div class='mob-photo'>
+            <%= cl_image_tag projet.photo.key %>
+          </div>
         <div class="projet-left-info">
           <h2><%= projet.name %></h2>
           <p class='date'><%= projet.date %></p>
@@ -24,6 +27,9 @@
     <% else %>
       <div class="projet">
         <div class='projet-left-photo'>
+          <%= cl_image_tag projet.photo.key %>
+        </div>
+        <div class='mob-photo'>
           <%= cl_image_tag projet.photo.key %>
         </div>
         <div class="projet-right-info">

@@ -1,14 +1,60 @@
+// Specific CSS for your home-page
+
+
+// @media(min-width: 800px) {
+//   .projet-right-photo{
+//     display:block
+//   }
+
+//   .mob-photo{
+//     display: none;
+//   }
+//   #home-header{
+//     height: 600px;
+//     .info-left{
+//       padding: 70px;
+//       width: 40%;
+//       p{
+//         margin-top: 120px;
+//       }
+//     }
+//     .photo-right{
+//       width: 60%;
+//     }
+//   }
+// }
+
+
+
+// @media(max-width: 800px) {
+//   .projet-right-photo{
+//     display:block
+//   }
+
+//   .mob-photo{
+//     display: none;
+//   }
+//   #home-header{
+//     height: 380px;
+//     padding: 20px;
+//     .info-left{
+//       padding: 40px;
+//       width: 50%;
+//       p{
+//         margin-top: 40px;
+//       }
+//     }
+//     .photo-right{
+//       width: 50%;
+//     }
+//   }
+// }
 
 @media(min-width: 800px) {
 
-  .projet-right-photo{
-    display:block
-  }
-
-  .mob-photo{
-    display: none;
-  }
   #home-header{
+  margin-top: 0px;
+  margin-bottom: 80px;
   display: flex;
   height: 600px;
   width: 100%;
@@ -30,62 +76,46 @@
       }
       h2{
         margin-top: 50px
-      }
-      .title{
-        display: flex;
-        p{
-          margin-top: 0;
-          margin-right: 10px;
-          font-family: 'Merriweather', serif;
-          font-size: 30px;
-        }       
-        h1{
-          margin-top: -5px;
-          margin-bottom: 0;
-          transform: rotate(
-            -2deg
-            ) skew(
-            -2deg
-          );
+      }    
+      h1{
+        margin-top: -5px;
+        margin-bottom: 0;
+        transform: rotate(
+          -2deg
+          ) skew(
+          -2deg
+        );
+        span{
           background-color: #b098A4;
           height: 40px;
-        } 
-      }
+        }
+      } 
     }
     .photo-right{
+      display: block;
     width: 60%;
       img{
         width: 100%;
       }
     }
-  }
-  .projet-right-photo{
-    display:block
+    .photo-profile-mob{
+      display: none;
+    }
   }
 }
 
 
 @media(max-width: 800px) {
-  .mob-photo{
-    display: block;
-    img{
-      width: 100%;
-    }
-  }
-  .projet-right-photo{
-    display:none
-  }
   #home-header{
+    margin-top: 30px;
+    margin-bottom: 80px;
     display: block;
     height: auto;
     width: 100vw;
     position: relative;
     .info-left{
-      width: fit-content;
+      // width: fit-content;
       padding: 30px;
-      span{
-        color: #B098A4;
-      }
       .lang-head{
         display: flex;
         img{
@@ -99,28 +129,31 @@
         font-size: 30px;
       }
       h2{
-        margin-top: 50px
+        margin-top: 0px
       }
-      .title{
-        display: block;
-          h1{
-            margin-top: -5px;
-            margin-bottom: 0;
-            width: fit-content;
-            transform: rotate(
-              -2deg
-              ) skew(
-              -2deg
-            );
-            background-color: #b098A4;
-            height: 40px;
-          } 
-        } 
+      h1{
+        margin-top: -15px;
+        margin-bottom: 0;
+        width: fit-content;
+        transform: rotate(
+          -2deg
+          ) skew(
+          -2deg
+        );
+        span{
+          background-color: #b098A4;
+          height: 40px;
+        }
+      } 
       h1, h2{
         margin-bottom: 30px;
       }
     }
     .photo-right{
+      display: none;
+    }
+    .photo-profile-mob{
+      display: block;
       width: 100%;
       img{
         width: 100%;
@@ -131,12 +164,5 @@
 
 .description{
   margin-bottom: 50px;
-}
-
-.projects{
-  margin-top: 100px;
-  .projet{
-    margin-top: 100px;
-  }
 }
 

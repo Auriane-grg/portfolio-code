@@ -1,9 +1,7 @@
 <div id="home-header">
   <div class ="info-left">
     <p>Bonjour, je suis</p>
-    <div class="title">
-      <h1> Auriane Grégoire</h1>
-    </div>
+    <h1><span> Auriane Grégoire</span></h1>
     <h2>Je suis Fullstack developpeuse</h2>
     <div class='lang-head'>
       <%= cl_image_tag("rails_qg59oc") %>
@@ -17,13 +15,17 @@
   <div class='photo-right'>
     <%= cl_image_tag("auriane_tb2aww") %>
   </div>
+    <div class='photo-profile-mob'>
+    <%= cl_image_tag("auriane_gregoire_veocak") %>
+  </div>
+  
 </div>
 <div class="projects">
   <% @projets.each do  |projet| %>
     <% if projet.id.even?%>
       <div class="projet">
         <div class='mob-photo'>
-          <%= cl_image_tag("cocktail-code_rlgkhy") %>
+          <%= cl_image_tag projet.photo.key %>
         </div>
         <div class="projet-left-info">
           <h2><%= projet.name %></h2>
@@ -37,6 +39,9 @@
       </div>
     <% else %>
       <div class="projet">
+        <div class='mob-photo'>
+          <%= cl_image_tag projet.photo.key %>
+        </div>
         <div class='projet-left-photo'>
           <%= cl_image_tag projet.photo.key %>
         </div>

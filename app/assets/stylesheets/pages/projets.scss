@@ -13,7 +13,11 @@
   }
 }
 
-@media(min-width: 500px) {
+@media(min-width: 800px) {
+
+  .mob-photo{
+    display: none;
+  }
   .projet{
     display: flex;
     margin-bottom: 20px;
@@ -22,6 +26,7 @@
     }
 
     .projet-left-photo, .projet-right-photo{
+      display: block;
       img{
         width: 100%;
       }
@@ -46,15 +51,26 @@
 
 
 
-@media(max-width: 500px) {
+@media(max-width: 800px) {
   .projet{
+
+    .mob-photo{
+      display: block;
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+
     display: block;
     margin-bottom: 20px;
     // .projet-left-photo, .projet-right-info, .projet-right-photo, .projet-left-info{
     //   width: 100%;
     // }
 
+
     .projet-left-photo, .projet-right-photo{
+      display: none;
       img{
         width: 100%;
       }
