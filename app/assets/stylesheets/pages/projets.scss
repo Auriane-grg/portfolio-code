@@ -27,6 +27,11 @@
 
     .projet-left-photo, .projet-right-photo{
       display: block;
+      width: 60%;
+      -webkit-animation-name: animatebottom;
+      -webkit-animation-duration: 2s;
+      animation-name: animatebottom;
+      animation-duration: 2s;
       img{
         width: 100%;
       }

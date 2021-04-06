@@ -14,7 +14,7 @@ const initNavbar = () => {
       navbar.classList.remove('nav-top')
       // add padding top to show content behind navbar
     } else {
-      navbar.style.top = "-50px";;
+      navbar.style.top = "-50px";
        // remove padding top from body
     }
     firstPosition = window.scrollY
