@@ -1,55 +1,5 @@
-// Specific CSS for your home-page
-
 
 @media(min-width: 800px) {
-  .projet-right-photo{
-    display:block
-  }
-
-  .mob-photo{
-    display: none;
-  }
-  #home-header{
-    height: 600px;
-    .info-left{
-      padding: 70px;
-      width: 40%;
-      p{
-        margin-top: 120px;
-      }
-    }
-    .photo-right{
-      width: 60%;
-    }
-  }
-}
-
-
-
-@media(max-width: 800px) {
-  .projet-right-photo{
-    display:block
-  }
-
-  .mob-photo{
-    display: none;
-  }
-  #home-header{
-    height: 380px;
-    .info-left{
-      padding: 40px;
-      width: 50%;
-      p{
-        margin-top: 40px;
-      }
-    }
-    .photo-right{
-      width: 50%;
-    }
-  }
-}
-
-@media(min-width: 500px) {
 
   .projet-right-photo{
     display:block
@@ -64,6 +14,7 @@
   width: 100%;
     .info-left{
       width: 40%;
+      padding: 70px;
       .lang-head{
         display: flex;
         img{
@@ -75,6 +26,7 @@
       p{
         font-family: 'Merriweather', serif;
         font-size: 30px;
+        margin-top: 120px;
       }
       h2{
         margin-top: 50px
@@ -107,10 +59,13 @@
       }
     }
   }
+  .projet-right-photo{
+    display:block
+  }
 }
 
 
-@media(max-width: 500px) {
+@media(max-width: 800px) {
   .mob-photo{
     display: block;
     img{

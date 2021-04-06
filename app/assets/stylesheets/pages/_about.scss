@@ -1,17 +1,54 @@
 
+
 @media(min-width: 800px) {
+
   #about-header{
-    height: fit-content;
+  height: fit-content;
+  display: flex;
+  width: 100%;
     .info-left{
-      padding: 70px;
       width: 40%;
+      text-align: left;
+      margin-right: 0;
+      padding: 70px;
+      }
       h1{
         margin-top: 120px;
+        span{
+          transform: rotate(
+            -2.2deg
+            ) skew(
+            -2.2deg
+          );
+          background-color: #b098A4;
+          height: 40px;
+        }
+        margin-bottom: 15px;
       }
-    }
+      h2{
+        margin-bottom: 50px;
+      }
+      // span{
+      //   color: #B098A4;
+      // }
     .photo-right{
       width: 60%;
+      img{
+        width: 100%;
+      }
     }
+  }
+
+  #about-me{
+    padding:50px;
+    text-align: center;
+  }
+
+  .btn-inside{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 80px;
   }
   #skills{
     display: grid;
@@ -19,102 +56,27 @@
     grid-gap: 50px;
     padding: 30px 100px;
     background-color: #e5EBEA;
-
     img{
-      width:100%;
+      width: 100%;
     }
   }
 }
-
-
 
 @media(max-width: 800px) {
+
   #about-header{
-    height: fit-content;
-    .info-left{
-      padding: 40px;
-      width: 50%;
-      h1{
-        margin-top: 70px;
-      }
-    }
-    .photo-right{
-      width: 50%;
-    }
-  }
-  #skills{
-    display: grid;
-    grid-template-columns: minmax(0, 1fr)  minmax(0, 1fr)  minmax(0, 1fr) minmax(0, 1fr)  minmax(0, 1fr) minmax(0, 1fr);
-    grid-gap: 10px;
-    padding: 30px;
-    background-color: #fefefe;
-
-    img{
-      width:100%;
-    }
-  }
-}
-
-
-@media(min-width: 500px) {
-  #about-header{
-  display: flex;
-  width: 100%;
-    .info-left{
-      width: 40%;
-      text-align: left;
-      margin-right: 0;
-      }
-      h1{
-        transform: rotate(
-          -2.2deg
-          ) skew(
-          -2.2deg
-        );
-        background-color: #b098A4;
-        height: 40px;
-        width: fit-content;
-        margin-bottom: 15px;
-      }
-      h2{
-        margin-bottom: 50px;
-      }
-      span{
-        color: #B098A4;
-      }
-    }
-    .photo-right{
-      img{
-        width: 100%;
-      }
-    }
-  #about-me{
-    padding:50px;
-    text-align: center;
-  }
-  .btn-inside{
-    display: inline-flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 80px;
-  }
-
-}
-
-
-@media(max-width: 500px) {
-  #about-header{
+    margin-top: 50px;
     display: block;
-    height: auto;
-    width: fit-content;
+    width: auto;
     position: relative;
+    height: fit-content;
     .info-left{
       text-align: center;
       padding: 30px;
-      width: max-content;
-      span{
-        color: #B098A4;
-      }
+      // width: 100%;
+      // span{
+      //   color: #B098A4;
+      // }
       .contact-head{
         display: flex;
         justify-content: center;
@@ -126,8 +88,9 @@
           ) skew(
           -2deg
         );
-        background-color: #b098A4;
-        width: fit-content;
+        span{
+          background-color: #b098A4;
+        }
       }
       h1, h2{
         margin-bottom: 30px;
@@ -140,19 +103,21 @@
       }
     }
   }
+
   #about-me{
     padding:20px;
     text-align: center;
   }
+
   #skills{
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr)  minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     grid-gap: 10px;
-    background-color: #fefefe;
+    background-color: #ebebeb;
     padding: 20px;
 
     img{
-      width:100%;
+      width:50%;
     }
   }
   .btn-inside{
@@ -162,7 +127,6 @@
     margin-bottom: 40px;
   }
 }
-
 
 .contact-head{
   display: flex;
