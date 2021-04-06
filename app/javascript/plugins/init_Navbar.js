@@ -4,7 +4,11 @@ const initNavbar = () => {
 
   if (!navBar) { return };
   window.addEventListener("scroll", () => {
-    if (window.scrollY < firstPosition ) {
+    if (window.scrollY === 0) {
+      navbar.classList.remove('nav-scroll')
+      navbar.classList.add('nav-top')
+    }
+    else if (window.scrollY  < firstPosition ) {
       navbar.style.top = "0";
       navbar.classList.add('nav-scroll')
       navbar.classList.remove('nav-top')
