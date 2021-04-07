@@ -58,10 +58,15 @@
 
 @media(max-width: 800px) {
   .projet{
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 2s;
+    animation-name: animatebottom;
+    animation-duration: 2s;
 
     .mob-photo{
       display: block;
       width: 100%;
+      
       img{
         width: 100%;
       }
