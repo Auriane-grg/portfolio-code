@@ -2,7 +2,7 @@
 <div id="projects">
   <% @projets.each do  |projet| %>
     <% if projet.id.even? %>
-      <div class="projet">
+      <div class="projet" id="<%= projet.name.partition(" ").first %>">
           <div class='mob-photo'>
             <%= cl_image_tag projet.photo.key %>
           </div>
@@ -25,7 +25,7 @@
         </div>
       </div>
     <% else %>
-      <div class="projet">
+      <div class="projet" id="<%= projet.name.partition(" ").first %>">
         <div class='projet-left-photo'>
           <%= cl_image_tag projet.photo.key %>
         </div>

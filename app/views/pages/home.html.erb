@@ -32,7 +32,8 @@
           <h2><%= projet.name %></h2>
           <p class='date'><%= projet.date %></p>
           <p class="description"><%= projet.description %></p>
-          <%= link_to "EN SAVOIR PLUS", projets_path, class:'btn' %>
+          <% p = projet.name.partition(" ").first %>
+          <%= link_to "EN SAVOIR PLUS", projets_path(anchor: p), class:'btn' %>
         </div>
         <div class='projet-right-photo'>
           <%= cl_image_tag projet.photo.key %>
