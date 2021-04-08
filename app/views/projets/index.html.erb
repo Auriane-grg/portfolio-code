@@ -8,7 +8,7 @@
           </div>
         <div class="projet-left-info">
           <h2><%= projet.name %></h2>
-          <p class='date'><%= projet.date %></p>
+          <p class='date'><%= link_to projet.github, target: "_blank" do %><i class="fab fa-github-square github-link"></i><% end %><%= projet.date %></p>
           <p class="description"><%= projet.description %></p>
           <p class='hebergement'><b>App hébergée sur : </b><%= projet.host %></p>
           <p><b>Database :</b> postgresql</p>
@@ -34,7 +34,7 @@
         </div>
         <div class="projet-right-info">
           <h2><%= projet.name %></h2>
-          <p class='date'><%= projet.date %></p>
+          <p class='date'><%= link_to projet.github, target: "_blank" do %><i class="fab fa-github-square github-link"></i><% end %><%= projet.date %></p>
           <p class="description"><%= projet.description %></p>
           <p class='hebergement'><b>App hébergée sur : </b><%= projet.host %></p>
           <p><b>Database :</b> postgresql</p>
