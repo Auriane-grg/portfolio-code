@@ -1,6 +1,7 @@
 
 <div id="projects">
-  <% @projets.each do  |projet| %>
+  <% @allprojets = @projets.order("id ASC") %>
+  <% @allprojets.each do  |projet| %>
     <% if projet.id.even? %>
       <div class="projet" id="<%= projet.name.partition(" ").first %>">
           <div class='mob-photo'>
